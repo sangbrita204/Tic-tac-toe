@@ -1,0 +1,67 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main game container */
+.game-container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+/* Status display */
+#status {
+    margin: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Game board */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+/* Each cell */
+.cell {
+    width: 90px;
+    height: 90px;
+    background-color: #e6e6e6;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Hover effect */
+.cell:hover {
+    background-color: #d9d9d9;
+}
+
+/* Reset button */
+#resetBtn {
+    margin-top: 15px;
+    padding: 8px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Responsive design */
+@media (max-width: 400px) {
+    .cell {
+        width: 70px;
+        height: 70px;
+        font-size: 30px;
+    }
+}
